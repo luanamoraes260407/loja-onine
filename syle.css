@@ -2,5 +2,8 @@
     --cor-de-fundo: #ff00ff;
     }
     body {
-        background-color: var(--cor-de-fundo);
+        background-color: rgb(240, 132, 182)
+        }
+        h1 {
+            background-color: rgb(219, 167, 199);
         }
