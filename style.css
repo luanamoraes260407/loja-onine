@@ -1,9 +1,18 @@
 :root {
     --cor-de-fundo: #ff00ff;
     }
-body {
-        background-color: --cor-de-fundo;
+    body {
+        background-color: rgb(240, 132, 182)
         }
         h1 {
             background-color: rgb(219, 167, 199);
         }
+        .cabeçalho__menu-hamburguer {
+            width: 24px;
+            height: 24px;
+            background-image: url(“../img/Menu.svg”);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            }
