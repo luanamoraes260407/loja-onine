@@ -1,35 +1,36 @@
 @import url(“styles/header.css”);
 
 :root {
-    --cor-de-fundo: #ff00ff;
+    --cor-de-fundo: #ffbcdd;
+    --branco: #b8578c;
     }
-    body {
-        background-color: rgb(240, 132, 182)
-        }
-        h1 {
-            background-color: rgb(219, 167, 199);
-        }
+body {
+    background-color: rgb(197, 53, 120);
+    }
         
-            .lista-menu {
-            display: none;
+ h1 {
+ background-color: rgb(248, 73, 181);
             }
-            .container__botao:checked ~ .lista-menu {
-            display: block;
-            }
-            .cabeçalho {
-            background-color: var(--branco);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            }
-            .lista-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            }
-            .lista-menu__titulo,
-            .lista-menu__item {
-            padding: 1em;
-            background-color: var(--branco);
-            }
+  .lista-menu {
+    display: none;
+    }
+    .container__botao:checked ~ .lista-menu {
+    display: block;
+    }
+    .cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    }
+    .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    }
+    .lista-menu__titulo,
+    .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+    }
