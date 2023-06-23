@@ -1,50 +1,87 @@
 @import url(“styles/header.css”);
+@import url(“styles/banner.css”);
 
 :root {
-    --cor-de-fundo: #da6ca3;
-    --branco: #e7a1c7;
-    --laranja: #fcdfea;
-    --azul-degrade: linear-gradient(97.54deg, #9c0060 35.49%, #b3237c 165.37%);
+    --cor-de-fundo: #ffb2d8;
+    --branco: #f35eb0;
+    --laranja: #ff2a7c;
+    --azul-degrade: linear-gradient(97.54deg, #ff94d6 35.49%, hsl(323, 67%, 57%) 165.37%);
     --fonte-principal: “Poppins”;
     }
 body {
-    background-color: rgb(199, 0, 93);
+    background-color: rgb(218, 96, 153);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
     }
         
- h1 {
-    background-color: rgb(255, 0, 157);
+h1 {
+    background-color: rgb(221, 120, 182);
             }
-  .lista-menu {
+.lista-menu {
     display: none;
     }
-    .container__botao:checked ~ .lista-menu {
+.container__botao:checked ~ .lista-menu {
     display: block;
     }
-    .cabeçalho {
+.cabeçalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     }
-    .lista-menu {
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
     }
-    .lista-menu__titulo {
-        color: var(--laranja);
-    .lista-menu__item {
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    }
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
     }
-    .lista-menu__link {
-        background: var(--azul-degrade);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-transform: uppercase;
-        }
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    }
+.container__botao {
+    display: none;
+    }
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+    }
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    }
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+    }
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    }
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url(“../img/Lupa.svg”) no-repeat;
+    background-position: 1em;
+    }
